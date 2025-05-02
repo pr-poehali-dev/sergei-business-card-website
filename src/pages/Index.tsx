@@ -14,14 +14,14 @@ const Index = () => {
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
           <Avatar className="w-32 h-32 border-4 border-indigo-400 shadow-lg">
             <img 
-              src="https://cdn.poehali.dev/files/4690ee8e-f006-4237-8265-20c0720e77b5.jpg" 
-              alt="Сергей" 
+              src="https://cdn.poehali.dev/files/74983c16-6669-423b-8013-93042a508f88.jpg" 
+              alt="Анна" 
               className="object-cover"
             />
           </Avatar>
           <div>
-            <h1 className="text-4xl font-bold mb-2">Сергей Иванов</h1>
-            <p className="text-xl opacity-90">Веб-разработчик и консультант</p>
+            <h1 className="text-4xl font-bold mb-2">Анна Смирнова</h1>
+            <p className="text-xl opacity-90">Веб-разработчик и дизайнер</p>
           </div>
         </div>
       </header>
@@ -36,27 +36,27 @@ const Index = () => {
                 <h2 className="text-2xl font-bold mb-4 text-white">Биография</h2>
                 <div className="md:flex gap-6 mb-6">
                   <img 
-                    src="https://cdn.poehali.dev/files/4690ee8e-f006-4237-8265-20c0720e77b5.jpg" 
-                    alt="Сергей Иванов" 
+                    src="https://cdn.poehali.dev/files/74983c16-6669-423b-8013-93042a508f88.jpg" 
+                    alt="Анна Смирнова" 
                     className="w-full md:w-1/3 rounded-lg mb-4 md:mb-0 shadow-md object-cover"
                   />
                   <div>
                     <p className="text-gray-300 mb-4">
-                      Сергей Иванов — опытный веб-разработчик с более чем 10-летним стажем в IT-индустрии. 
-                      Специализируется на создании современных веб-приложений, оптимизации производительности 
-                      и консультировании по вопросам цифровой трансформации бизнеса.
+                      Анна Смирнова — талантливый веб-разработчик и UI/UX дизайнер с 7-летним опытом работы.
+                      Специализируется на создании современных веб-приложений с интуитивно понятным интерфейсом,
+                      оптимизации пользовательского опыта и разработке креативных дизайн-решений.
                     </p>
                     <p className="text-gray-300">
-                      Закончил Московский Государственный Технический Университет по специальности 
-                      "Информационные технологии". Работал в ведущих технологических компаниях, включая 
-                      разработку сложных проектов для корпоративных клиентов.
+                      Окончила Санкт-Петербургский Государственный Университет по направлению 
+                      "Информационные технологии и дизайн". Сотрудничала с ведущими компаниями в сфере 
+                      технологий и электронной коммерции.
                     </p>
                   </div>
                 </div>
                 <p className="text-gray-300">
-                  В свободное время увлекается фотографией, туризмом и игрой на гитаре. 
-                  Постоянно совершенствуется в профессиональной сфере, изучая новые технологии 
-                  и методологии разработки.
+                  В свободное время Анна увлекается фотографией, живописью и путешествиями, 
+                  что помогает ей находить вдохновение для новых проектов. Постоянно изучает 
+                  новые технологии и тренды в области веб-разработки и дизайна.
                 </p>
               </CardContent>
             </Card>
@@ -70,7 +70,7 @@ const Index = () => {
                     {[
                       "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop",
                       "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop",
-                      "https://cdn.poehali.dev/files/4690ee8e-f006-4237-8265-20c0720e77b5.jpg",
+                      "https://cdn.poehali.dev/files/74983c16-6669-423b-8013-93042a508f88.jpg",
                       "https://images.unsplash.com/photo-1517245386540-7b599f602b31?q=80&w=800&auto=format&fit=crop",
                     ].map((src, index) => (
                       <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
@@ -101,7 +101,7 @@ const Index = () => {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Icon name="Mail" className="text-blue-400" />
-                    <span className="text-gray-300">sergey@example.com</span>
+                    <span className="text-gray-300">anna@example.com</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Icon name="Phone" className="text-blue-400" />
@@ -109,7 +109,7 @@ const Index = () => {
                   </div>
                   <div className="flex items-center gap-3">
                     <Icon name="MapPin" className="text-blue-400" />
-                    <span className="text-gray-300">Москва, Россия</span>
+                    <span className="text-gray-300">Санкт-Петербург, Россия</span>
                   </div>
                 </div>
               </CardContent>
@@ -146,7 +146,7 @@ const Index = () => {
       <footer className="bg-black text-white py-6">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p>© 2025 Сергей Иванов. Все права защищены.</p>
+            <p>© 2025 Анна Смирнова. Все права защищены.</p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <Icon name="Github" className="cursor-pointer hover:text-blue-400 transition-colors" />
               <Icon name="Linkedin" className="cursor-pointer hover:text-blue-400 transition-colors" />
