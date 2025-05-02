@@ -14,7 +14,7 @@ const Index = () => {
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
           <Avatar className="w-32 h-32 border-4 border-white shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=300&auto=format&fit=crop" 
+              src="https://cdn.poehali.dev/files/4690ee8e-f006-4237-8265-20c0720e77b5.jpg" 
               alt="Сергей" 
               className="object-cover"
             />
@@ -34,16 +34,25 @@ const Index = () => {
             <Card className="mb-8">
               <CardContent className="pt-6">
                 <h2 className="text-2xl font-bold mb-4">Биография</h2>
-                <p className="text-gray-700 mb-4">
-                  Сергей Иванов — опытный веб-разработчик с более чем 10-летним стажем в IT-индустрии. 
-                  Специализируется на создании современных веб-приложений, оптимизации производительности 
-                  и консультировании по вопросам цифровой трансформации бизнеса.
-                </p>
-                <p className="text-gray-700 mb-4">
-                  Закончил Московский Государственный Технический Университет по специальности 
-                  "Информационные технологии". Работал в ведущих технологических компаниях, включая 
-                  разработку сложных проектов для корпоративных клиентов.
-                </p>
+                <div className="md:flex gap-6 mb-6">
+                  <img 
+                    src="https://cdn.poehali.dev/files/4690ee8e-f006-4237-8265-20c0720e77b5.jpg" 
+                    alt="Сергей Иванов" 
+                    className="w-full md:w-1/3 rounded-lg mb-4 md:mb-0 shadow-md object-cover"
+                  />
+                  <div>
+                    <p className="text-gray-700 mb-4">
+                      Сергей Иванов — опытный веб-разработчик с более чем 10-летним стажем в IT-индустрии. 
+                      Специализируется на создании современных веб-приложений, оптимизации производительности 
+                      и консультировании по вопросам цифровой трансформации бизнеса.
+                    </p>
+                    <p className="text-gray-700">
+                      Закончил Московский Государственный Технический Университет по специальности 
+                      "Информационные технологии". Работал в ведущих технологических компаниях, включая 
+                      разработку сложных проектов для корпоративных клиентов.
+                    </p>
+                  </div>
+                </div>
                 <p className="text-gray-700">
                   В свободное время увлекается фотографией, туризмом и игрой на гитаре. 
                   Постоянно совершенствуется в профессиональной сфере, изучая новые технологии 
@@ -61,7 +70,7 @@ const Index = () => {
                     {[
                       "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop",
                       "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop",
-                      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800&auto=format&fit=crop",
+                      "https://cdn.poehali.dev/files/4690ee8e-f006-4237-8265-20c0720e77b5.jpg",
                       "https://images.unsplash.com/photo-1517245386540-7b599f602b31?q=80&w=800&auto=format&fit=crop",
                     ].map((src, index) => (
                       <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
